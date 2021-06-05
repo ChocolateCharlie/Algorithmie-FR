@@ -1,0 +1,34 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header {
+  background-color: #1a237e;
+  background-image: none;
+  color: #f7fcff;
+}
+
+header p {
+  color: #eae6d1;
+}
+
+#banner {
+  background-color: #9398b6;
+  border: solid 1px #534bae;
+  color: #000051;
+}
+
+section {
+  background-color: #f7fcff;
+  color: #000051;
+}
+
+footer a {
+  color: #1a237e;
+}
+
+footer a:hover {
+  color: #9398b6;
+}
+
