@@ -4,3 +4,7 @@
 
 layout: default
 ---
+
+# Bienvenue sur mon blog !
+
+Pour l'instant c'est encore un peu vide mais je compte ajouter du contenu très prochainement.
