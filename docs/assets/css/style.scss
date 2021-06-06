@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 
+/* ---------- HEADER ---------- */
 header {
   background-color: #1a237e;
   background-image: none;
@@ -13,22 +14,45 @@ header p {
   color: #eae6d1;
 }
 
+/* ---------- BANNER ---------- */
 #banner {
   background-color: #9398b6;
   border: solid 1px #534bae;
   color: #000051;
 }
 
+#banner strong {
+  color: #f7fcff;
+}
+
+#banner .button {
+  border: solid 1px #b8b4a0;
+}
+
+#banner .button:hover {
+  background-color: #1a237e;
+}
+
+#banner .fork {
+  background-color: #534bae;
+}
+
+/* ---------- SECTION ---------- */
 section {
   background-color: #f7fcff;
   color: #000051;
 }
 
+/* ---------- FOOTER ---------- */
 footer a {
-  color: #1a237e;
+  color: #9398b6;
 }
 
 footer a:hover {
-  color: #9398b6;
+  color: #1a237e;
+}
+
+footer p {
+  color: #000051;
 }
 
