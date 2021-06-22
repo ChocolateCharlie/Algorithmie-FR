@@ -53,8 +53,18 @@ Analyser un algorithme, même simple, n'est pas évident.
 En effet, les algorithmes peuvent se comporter de manière différente selon l'entrée.
 Par conséquent, il nous faut résumer l'ensemble de ces comportements possibles en des **formules simples et faciles à comprendre**.
 
-
-
+---
 
 ### Liens externes
-En cours
+:fr:
+  - Le chapitre sur la [notion de complexité](https://openclassrooms.com/fr/courses/1467201-algorithmique-pour-lapprenti-programmeur/1467358-la-notion-de-complexite) du cours d'[algorithmique pour l'apprenti programmeur](https://openclassrooms.com/fr/courses/1467201-algorithmique-pour-lapprenti-programmeur) sur OpenClassrooms (tous niveaux) :warning: faire la MAJ car le cours sera bientôt archivé :warning:
+  - L'article sur la [complexité d'un algorithme](https://info.blaisepascal.fr/nsi-complexite-dun-algorithme) sur le site du lycée Blaise Pascal de Clermont-Ferrand (niveau lycée)
+  - L'article sur la [complexité algorithmique](http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a2_complexite.php) sur le site Mon Lycée Numérique (niveau lycée)
+  - Le cours de [structures de données et algorithmes fondamentaux](http://igm.univ-mlv.fr/~alabarre/teaching/struct/poly-m1103.pdf) d'Anthony Labarre à l'IUT de Marne-la-Vallée (niveau 1ère année de DUT Informatique)
+  - Le cours sur la [notion de complexité algorithmique](http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a2_complexite.php) de Jean-Pierre Becirspahic au lycée Louis-Le-Grand (niveau MPSI)
+  - Le cours de [complexité algorithmique](https://bouchflo.gricad-pages.univ-grenoble-alpes.fr/L2-algo/download/Documents/03-Complexite.pdf) de Florent Bouchez Tichadou à l'Université Grenoble Alpes (niveau L2)
+  - Le livre [Complexité algorithmique](https://www.irif.fr/~sperifel//complexite.pdf) de Sylvain Perifel (niveau très avancé...)
+
+:uk:
+  - [StackOverflow](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation)
+  - [Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
