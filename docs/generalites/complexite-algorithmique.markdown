@@ -14,10 +14,7 @@ _Il est à noter que **la complexité algorithmique est un sujet difficile.**
 Il est donc parfaitement normal de revenir de temps à autre à cet article lors de votre lecture sur ce blog.
 Et qui sait, peut-être qu'un jour vous aurez le courage de vous y mettre "une bonne fois pour toute"_ :wink:
 
-_Vous avez sans doute déjà remarqué que la plupart des concepts en informatique sont présentés selon une approche similaire d'un manuel à l'autre.
-Pour ce qui est de la complexité algorithmique, les chapitres dédiés à ce sujet diffèrent grandement selon les ouvrages, tantôt privilégiant un formalisme mathématique particulièrement rebutant pour le novice, tantôt se lançant d'emblée dans une mise en pratique noyant l'essence de la démarche dans des considérations liées au problème spécifiquement choisi en guise d'illustration.
-Je m'efforcerai donc ici de préserver un certain équilibre entre ces deux aspects, afin de rendre le plus clair possible mon propos.
-Ainsi, en dépit de ma volonté de m'adresser à des débutants, un certain formalisme (et raisonnement) mathématique sera préservé.
+_Notez que, malgré ma volonté de m'adresser à des débutants, un certain formalisme (et raisonnement) mathématique sera préservé.
 En effet, on trouve nombre d'introductions à l'analyse de la complexité algorithmique sur le web qui, sous prétexte de simplifier ce sujet intrinsèquement complexe, se bornent à énumérer tel un catalogue les analyses les plus fréquemment rencontrées.
 Or, ce genre d'approche n'aident pas davantage à **comprendre** comment réaliser une telle analyse.
 Ce sont simplement les résultats d'une démarche exposés tels quels, sans expliquer pour autant en quoi consiste ladite démarche.
@@ -34,7 +31,7 @@ _Bonne lecture !_
 
 ---
 
-## Introduction : pourquoi analyser un algorithme ?
+## Pourquoi analyser un algorithme ?
 
 L'une des différences fondamentales entre un programmeur réellement compétent et un novice réside dans la maîtrise des fondamentaux en algorithmie.
 Or l'analyse de la complexité, c'est-à-dire la prédiction des ressources requises par un algorithme donné pour s'exécuter convenablement, en fait partie.
@@ -44,14 +41,36 @@ Par conséquent, tout bon programmeur se doit d'être attentif quant à l'usage 
 Si vous connaissez  [la loi de Moore](https://fr.wikipedia.org/wiki/Loi_de_Moore), vous pourriez objecter que les ordinateurs évoluent suffisamment rapidement pour que de telles considérations soient vaines.
 Néanmoins, que faites-vous si la complexité de votre algorithme croit plus vite que cette loi ?
 Vous ne pourrez pas attendre quelques années que les ordinateurs deviennent plus puissant, il vous faut un nouvel algorithme.
-Et, pour ce faire, il vous faut :
-  1) déterminer le temps d'ex
+Et, pour ce faire, il vous faut être capable d'anticiper le temps que prend un algorithme à s'exécuter, afin de pouvoir comparer les différents algorithmes entre eux et de sélectionner celui qui aura la durée d'exécution la plus courte.
 
 _**Remarque :** dans le cadre des compétitions de programmation, vous aurez probablement déjà remarqué qu'un certain temps et une certaine quantité de mémoire vous sont alloués._
 
 Analyser un algorithme, même simple, n'est pas évident.
 En effet, les algorithmes peuvent se comporter de manière différente selon l'entrée.
 Par conséquent, il nous faut résumer l'ensemble de ces comportements possibles en des **formules simples et faciles à comprendre**.
+
+## Comparaison asymptotique pour les non-matheux
+
+### Comment simplifier une fonction ?
+
+Voici quelques règles que vous proposent Dasgupta & Papadimitriou pour simplifier les fonctions en écartant les termes les moins importants :
+  - Ne pas tenir compte des constantes multiplicatives. _Exemple : 7n^3 devient n^3_
+  - n^a est plus important que n^b si a > b. _Exemple : n^2 + n devient n^2_
+  - Les exponentielles sont plus importantes que n'importe quel polynôme. _Exemple : 2^n + n^7 devient 2^n_
+  - De manière analogue, les polynômes sont plus importants que n'importe quel logarithme. _Exemple : n^2 + n log(n) devient n^2_
+
+## En pratique
+
+### Qu'est-ce qu'une étape élémentaire ?
+
+### Pourquoi choisir le pire des cas ?
+
+## Conclusion
+
+Face à un algorithme, Dasgupta et Papadimitriou vous conseillent de toujours vous poser trois questions :
+  - Est-il correct ? c'est-à-dire : a-t-il une fin ? et : est-ce que la sortie est toujours la bonne réponse ?
+  - Combien de temps prend-il pour s'exécuter, exprimé en fonction de la taille de l'entrée ? (idem pour la mémoire)
+  - Est-il possible de mieux faire ? c'est-à-dire : est-il possible de concevoir un algorithme plus rapide ou qui consomme moins de mémoire ?
 
 ---
 
